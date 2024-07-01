@@ -159,3 +159,6 @@ var summary = BenchmarkRunner.Run<MyBenchmarks>();
 ## 주의사항
 Debug가 아닌 Release 모드에서 진행해야 한다
 테스트 대상 클래스도 public 이어야 한다
+
+
+sample : https://github.com/dotnet/BenchmarkDotNet
