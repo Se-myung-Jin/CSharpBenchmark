@@ -33,7 +33,7 @@ namespace CSharpBenchmark
             //var summary = BenchmarkRunner.Run(typeof(Program).Assembly);
 
             // Run benchmarking on the specified type
-            var summary = BenchmarkRunner.Run<CompareLinq>();
+            var summary = BenchmarkRunner.Run<CompareToString>();
 
             // Run benchmark on the specified type
             //var summary = BenchmarkRunner.Run(typeof(MyBenchmarks));

@@ -20,7 +20,7 @@ namespace CSharpBenchmark
         {
             for (var i = 0; i < 100; i++)
             {
-                var s = string.Format("Test: {0}", i.ToString());
+                var s = string.Format("Test: {0}", i);
             }
         }
     }
