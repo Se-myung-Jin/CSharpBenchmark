@@ -1,5 +1,4 @@
 ﻿using BenchmarkDotNet.Attributes;
-using static System.Runtime.InteropServices.JavaScript.JSType;
 using System.Runtime.InteropServices;
 using System.Runtime.CompilerServices;
 

@@ -12,23 +12,21 @@ namespace CSharpBenchmark
     {
         public int[] arr = new int[] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
 
-        [Benchmark]
-        public void Count()
+        [Benchmark(Baseline = true)]
+        public void LinqMethod()
         {
-            var list = arr.Select(x => x).Where(x => x > 4).ToList();
+            var list = arr.Where(x => x > 4).Select(x => x);
+        }
+
+        [Benchmark]
+        public void LinqMethod2()
+        {
+            var list = arr.Select(x => x).Where(x => x > 4);
         }
 
 
         [Benchmark]
-        public void Any()
-        {
-            var list = from n in arr
-                       where n > 4
-                       select n;
-        }
-
-        [Benchmark]
-        public void Any2()
+        public void LinqToSql()
         {
             var list = from n in arr
                        where n > 4
