@@ -10,7 +10,7 @@ namespace CSharpBenchmark
         public void StringForLoop()
         {
             string ret = string.Empty;
-            for (var i = 0; i < 100; i++)
+            for (var i = 0; i < 100000000; i++)
             {
                 ret += i.ToString();
             }
@@ -22,7 +22,7 @@ namespace CSharpBenchmark
         public void StringBuilderForLoop()
         {
             var str = new StringBuilder();
-            for (var i = 0; i < 100; i++)
+            for (var i = 0; i < 100000000; i++)
             {
                 str.Append(i.ToString());
             }
